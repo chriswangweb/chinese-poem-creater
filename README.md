@@ -8,6 +8,11 @@ apt-get update
 apt-get install git 
 git clone https://github.com/karpathy/char-rnn.git
 
+ubuntu对中文的支持
+locale -a
+export LANG="zh_CN.utf8"
+
+//TODO::繁体字问题还未解决
 # 3.
 cd char-rnn
 将input文件夹的某个文件移到 data/your-floder-name
