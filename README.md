@@ -1,18 +1,18 @@
 # chinese-poem-creater
 实践char-rnn
 
-1.获得带torch的docker
+# 1.获得带torch的docker
 地址：https://hub.docker.com/r/kaixhin/torch/
-2.安装好，进入docker
+# 2.安装好，进入docker
 apt-get update
 apt-get install git 
 git clone https://github.com/karpathy/char-rnn.git
 
-3.
+# 3.
 cd char-rnn
 将input文件夹的某个文件移到 data/your-floder-name
 
-4.学习
+# 4.学习
 th train.lua -data_dir data/your-floder-name -gpuid -1
 
 结果如下
@@ -31,7 +31,7 @@ evaluating loss over split index 2
 4/4...
 saving checkpoint to cv/lm_lstm_epoch50.00_2.0510.t7
 3300/3300 (epoch 50.000), train_loss = 1.46940195, grad/param norm = 2.5143e-01, time/batch = 0.4425s
-5.取样
+# 5.取样
 th sample.lua cv/lm_lstm_epoch50.00_2.0510.t7 -gpuid -1 -temperature 0.2
-6.调整取样参数
+# 6.调整取样参数
 temperature在0～1之间调整，越小越保守，越大越奔放
