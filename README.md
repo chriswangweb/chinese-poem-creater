@@ -15,7 +15,7 @@
     //TODO::繁体字问题还未解决
 ## 3.
     cd char-rnn
-将input文件夹的某个文件移到 data/your-floder-name
+将input文件夹的某个文件移到 data/your-floder-name，并改名为input.txt
 
 ## 4.学习
     th train.lua -data_dir data/your-floder-name -gpuid -1
